@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>STUDENT FORM</h2>
+        
+        <table class="form-table">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="number" id="age"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" value="Male" checked> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <td>
+                    <select id="course">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PYTHON">PYTHON</option>
+                        <option value="HTML & CSS">HTML & CSS</option>
+                        <option value="Full Stack">Full Stack</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="save-btn" onclick="addStudent()">Save</button>
+                </td>
+            </tr>
+        </table>
+
+        <table class="output-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>COURSE</th>
+                    <th>GENDER</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="studentform.js"></script>
+</body>
+</html>
